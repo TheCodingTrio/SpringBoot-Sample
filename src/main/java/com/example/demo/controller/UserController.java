@@ -38,6 +38,11 @@ public class UserController {
     public UserDTO getUserByUserID(@PathVariable String userID){
         return userService.getUserByUserID(userID);
     }
+    //this code snippet defines a GET request handler that takes a user ID as a path variable,
+    // delegates to the userService to retrieve a UserDTO object based on the provided ID,
+    // and then returns the retrieved UserDTO object as the response from the controller method.
+
+
 
     @GetMapping("/getUserByUserIDAndAddress/{userID}/{address}")
     public UserDTO getUserByUserIDAndAddress(@PathVariable String userID, @PathVariable String address){
